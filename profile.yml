@@ -1,0 +1,139 @@
+# Omkar's GitHub profile cards, rendered by readme-kit (MIT, github.com/Sagargupta16/readme-kit-action).
+# Colours: teal and orange, like a film grade. Teal is the accent; orange is the "amber" highlight.
+# Only numbers that exist in a repo's eval go on these cards.
+
+theme:
+  accent: "#2dd4bf"
+
+hero:
+  name: Omkar Khadilkar
+  kicker: Hi, I am
+  role: Applied AI Engineer
+  taglines:
+    - I build AI systems that know when they're unsure
+    - Rules first, AI for the rest, a confidence score on every answer
+    - "M.Sc. Big Data and Business Analytics, FOM Essen"
+    - Colour grading and video on the side
+  status: Open to Werkstudent roles
+  location: Essen, Germany
+  constellation:
+    hub: GATE
+    nodes: [RULES, LLM, EVAL, CV, DATA]
+
+terminal:
+  prompt: "omkar@essen:~$"
+  title: "omkar@essen: ~"
+  commands:
+    - command: whoami
+      output:
+        - "Omkar Khadilkar  |  Applied AI Engineer  |  M.Sc. student, FOM Essen"
+    - command: ls ~/live
+      color: sky
+      output:
+        - werkbank  dem-fragen  guidance-reconciliation-engine
+    - command: cat werkbank/reports/eval.md | head -3
+      color: amber
+      output:
+        - "60 hand-written requests  |  top-1 88.3%  |  40% auto-routed at 95.8%"
+
+headers:
+  - title: Featured Projects
+    subtitle: built, shipped and measured
+    key: projects
+  - title: In Numbers
+    subtitle: from the eval files, not from memory
+    key: numbers
+  - title: Connect With Me
+    subtitle: where to find me
+    key: connect
+
+divider: true
+
+stats:
+  - value: 88.3%
+    label: Werkbank, top-1 on 60 hand-written requests
+    color: amber
+  - value: 95.8%
+    label: Werkbank, accuracy when it routes alone
+    color: amber
+  - value: 188
+    label: SEC guidance items reconciled
+    color: sky
+  - value: 3.7%
+    label: of them needed the LLM
+    color: sky
+  - github: repos
+    value: 12
+    label: public repositories
+
+projects:
+  - title: Werkbank
+    date: November 2026
+    description: >-
+      Order routing for furniture shops with their own workshops: a request typed
+      like a job slip goes to the right workshop with a confidence score, and unsure
+      orders wait in a review queue. English and German UI.
+    tech: [Next.js, TypeScript, Postgres, Classifier, PWA]
+    live: true
+    url: https://werkbank-gamma.vercel.app
+  - title: Dem Fragen
+    date: November 2026
+    description: >-
+      Legal first information for India: plain-language questions get cited answers
+      under Indian law and a clear signal when to see an advocate, with a lawyer
+      review dashboard for every source.
+    tech: [Next.js, TypeScript, Postgres, Retrieval, Claude API, Vitest]
+    live: true
+    url: https://github.com/omkar-k0/cuddly-octo-palm-tree
+  - title: Guidance Reconciliation Engine
+    date: October 2026
+    description: >-
+      Checks whether US tech companies hit their own revenue guidance: rules label
+      the clear cases, Claude judges only the low-confidence rest, and every label
+      must quote the SEC filing.
+    tech: [Python, SEC EDGAR, XBRL, Claude API, pytest]
+    live: true
+    url: https://guidance-reconciliation-engine.vercel.app
+  - title: Laufbahn
+    date: November 2026
+    description: >-
+      A Claude Code plugin for a careful job search: it verifies every posting on the
+      employer's site, prepares tailored applications and never sends anything
+      without approval.
+    tech: [TypeScript, Node.js, Claude Code, SQLite]
+    url: https://github.com/omkar-k0/laufbahn
+  - title: GradeLens
+    date: November 2026
+    description: >-
+      A Chrome extension for FOM students that shows grade trajectory and what each
+      open exam needs to hit a target, running entirely in the browser.
+    tech: [JavaScript, Chrome Extension, SVG]
+    url: https://github.com/omkar-k0/gradelens
+  - title: lookmatch
+    date: November 2026
+    description: >-
+      Upload a clip, get its colour look back as a LUT with a match score. Early
+      stage: a feasibility spike and an eval plan built on looks with known answers.
+    tech: [Python, NumPy, scikit-image, CIEDE2000]
+    url: https://github.com/omkar-k0/lookmatch
+
+buttons:
+  - label: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/omkar-khadilkar-/
+  - label: Substack
+    icon: substack
+    url: https://substack.com/@krakmo
+  - label: Email
+    icon: gmail
+    url: mailto:omkarkhadilkar8@gmail.com
+  - label: GitHub
+    icon: github
+    url: https://github.com/omkar-k0
+
+footer:
+  kicker: Omkar Khadilkar  |  Applied AI Engineer
+  lines:
+    - Thanks for visiting
+    - Open to Werkstudent roles in Essen, Duesseldorf and Dortmund
+    - New build log every Tuesday
