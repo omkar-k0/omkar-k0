@@ -69,7 +69,7 @@ stats:
 projects:
   - title: Werkbank
     date: November 2026
-    description: "Routes a furniture shop's repair orders to the right workshop with a confidence score, and unsure orders wait for review."
+    description: "Routes furniture-shop repair orders to the right workshop, with a confidence score on each."
     tech: [Next.js, TypeScript, Postgres, Classifier, PWA]
     live: true
     url: https://werkbank-gamma.vercel.app
@@ -81,18 +81,18 @@ projects:
     url: https://github.com/omkar-k0/cuddly-octo-palm-tree
   - title: Guidance Reconciliation Engine
     date: October 2026
-    description: "Checks whether US tech companies hit their own revenue guidance, and every label quotes the SEC filing."
+    description: "Checks if US tech firms hit their own revenue guidance, citing the SEC filing every time."
     tech: [Python, SEC EDGAR, XBRL, Claude API, pytest]
     live: true
     url: https://guidance-reconciliation-engine.vercel.app
   - title: Laufbahn
     date: November 2026
-    description: "A Claude Code plugin that runs a careful job search and never sends an application without approval."
+    description: "A Claude Code plugin for a careful job search that never applies without your approval."
     tech: [TypeScript, Node.js, Claude Code, SQLite]
     url: https://github.com/omkar-k0/laufbahn
   - title: GradeLens
     date: November 2026
-    description: "A Chrome extension that shows FOM students what each open exam needs to reach their target grade."
+    description: "A Chrome extension showing FOM students what each open exam needs to hit a target grade."
     tech: [JavaScript, Chrome Extension, SVG]
     url: https://github.com/omkar-k0/gradelens
   - title: lookmatch
