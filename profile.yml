@@ -1,123 +1,126 @@
-# Omkar's GitHub profile cards, rendered by readme-kit (MIT, github.com/Sagargupta16/readme-kit-action).
-# Colours: teal and orange, like a film grade. Teal is the accent; orange is the "amber" highlight.
-# Only numbers that exist in a repo's eval go on these cards.
-
+# Omkar's real profile. Every number here exists in a public repo's eval or results file.
 theme:
   accent: "#2dd4bf"
+  highlight: "#f59e0b"
 
 hero:
-  name: Omkar Khadilkar
   kicker: Hi, I am
+  name: Omkar Khadilkar
   role: Applied AI Engineer
   taglines:
     - I build AI systems that know when they're unsure
     - Rules first, AI for the rest, a confidence score on every answer
-    - "M.Sc. Big Data and Business Analytics, FOM Essen"
-    - Colour grading and video on the side
+    - M.Sc. Big Data and Business Analytics, FOM Essen
   status: Open to Werkstudent roles
   location: Essen, Germany
-  constellation:
+  graph:
     hub: GATE
     nodes: [RULES, LLM, EVAL, CV, DATA]
 
+chart:
+  title: Confidence vs accuracy
+  subtitle: Werkbank auto-route threshold sweep
+  x_label: auto-route threshold
+  source: "werkbank reports/eval.json, synthetic test set, n=800"
+  series:
+    - name: accuracy when routed alone
+      color: accent
+      points: [[0.5, 0.828], [0.6, 0.845], [0.7, 0.865], [0.8, 0.912], [0.85, 0.954], [0.9, 0.968], [0.95, 1.0]]
+    - name: share routed alone
+      color: highlight
+      points: [[0.5, 0.718], [0.6, 0.565], [0.7, 0.436], [0.8, 0.241], [0.85, 0.189], [0.9, 0.119], [0.95, 0.044]]
+  marker:
+    x: 0.85
+    label: "chosen gate 0.85: 95.4% accurate, 18.9% routed alone"
+
 terminal:
-  prompt: "omkar@essen:~$"
   title: "omkar@essen: ~"
+  prompt: "$"
   commands:
     - command: whoami
-      output:
-        - "Omkar Khadilkar  |  Applied AI Engineer  |  M.Sc. student, FOM Essen"
+      output: ["Omkar Khadilkar | Applied AI Engineer | M.Sc. student, FOM Essen"]
     - command: ls ~/live
-      color: sky
-      output:
-        - werkbank  dem-fragen  guidance-reconciliation-engine
-    - command: cat werkbank/reports/eval.md | head -3
-      color: amber
-      output:
-        - "60 hand-written requests  |  top-1 88.3%  |  40% auto-routed at 95.8%"
+      color: accent
+      output: ["werkbank/  dem-fragen/  guidance-reconciliation-engine/"]
+    - command: cat werkbank/reports/eval.md
+      color: highlight
+      output: ["60 hand-written requests | top-1 88.3% | 40% auto-routed at 95.8%"]
 
 headers:
-  - title: Featured Projects
-    subtitle: built, shipped and measured
-    key: projects
-  - title: In Numbers
-    subtitle: from the eval files, not from memory
-    key: numbers
-  - title: Connect With Me
-    subtitle: where to find me
-    key: connect
-
-divider: true
-
-stats:
-  - value: 88.3%
-    label: Werkbank, top-1 on 60 hand-written requests
-    color: amber
-  - value: 95.8%
-    label: Werkbank, accuracy when it routes alone
-    color: amber
-  - value: 188
-    label: SEC guidance items reconciled
-    color: sky
-  - value: 3.7%
-    label: of them needed the LLM
-    color: sky
-  - github: repos
-    value: 12
-    label: public repositories
+  - {index: "01", title: Featured Projects, subtitle: "built, shipped and measured", key: projects, aside: "6 projects"}
+  - {index: "02", title: In Numbers, subtitle: "from the eval files, not from memory", key: numbers}
+  - {index: "03", title: Stack, subtitle: "what I build with", key: stack, aside: "4 lanes"}
+  - {index: "04", title: Connect, subtitle: "where to find me", key: connect}
 
 projects:
   - title: Werkbank
-    date: November 2026
-    description: "Routes furniture-shop repair orders to the right workshop, with a confidence score on each."
-    tech: [Next.js, TypeScript, Postgres, Classifier, PWA]
+    date: "2026.11"
+    stage: active
     live: true
     url: https://werkbank-gamma.vercel.app
+    description: Routes a furniture shop's repair orders to the right workshop, with a confidence score on each.
+    metric: "88.3% top-1 on 60 hand-written requests"
+    tech: [Next.js, TypeScript, Postgres, PWA]
   - title: Dem Fragen
-    date: November 2026
-    description: "Cited answers to legal questions under Indian law, with a clear signal when to see an advocate."
-    tech: [Next.js, TypeScript, Postgres, Retrieval, Claude API, Vitest]
+    date: "2026.11"
+    stage: active
     live: true
     url: https://github.com/omkar-k0/cuddly-octo-palm-tree
+    description: Cited answers to legal questions under Indian law, with a clear signal when to see an advocate.
+    tech: [Next.js, TypeScript, Postgres, Claude API]
   - title: Guidance Reconciliation Engine
-    date: October 2026
-    description: "Checks if US tech firms hit their own revenue guidance, citing the SEC filing every time."
-    tech: [Python, SEC EDGAR, XBRL, Claude API, pytest]
+    date: "2026.10"
+    stage: pipeline
     live: true
     url: https://guidance-reconciliation-engine.vercel.app
+    description: Checks if US tech firms hit their own revenue guidance, citing the SEC filing every time.
+    metric: "188 items, 3.7% sent to the LLM"
+    tech: [Python, SEC EDGAR, XBRL, Claude API]
   - title: Laufbahn
-    date: November 2026
-    description: "A Claude Code plugin for a careful job search that never applies without your approval."
-    tech: [TypeScript, Node.js, Claude Code, SQLite]
+    date: "2026.11"
+    stage: tool
     url: https://github.com/omkar-k0/laufbahn
+    description: A Claude Code plugin for a careful job search that never applies without your approval.
+    tech: [TypeScript, Node.js, SQLite]
   - title: GradeLens
-    date: November 2026
-    description: "A Chrome extension showing FOM students what each open exam needs to hit a target grade."
-    tech: [JavaScript, Chrome Extension, SVG]
+    date: "2026.11"
+    stage: tool
     url: https://github.com/omkar-k0/gradelens
+    description: A Chrome extension showing FOM students what each open exam needs to hit a target grade.
+    tech: [JavaScript, Chrome Extension, SVG]
   - title: lookmatch
-    date: November 2026
-    description: "Upload a clip, get its colour look back as a LUT with a match score. Early stage."
-    tech: [Python, NumPy, scikit-image, CIEDE2000]
+    date: "2026.11"
+    stage: experiment
     url: https://github.com/omkar-k0/lookmatch
+    description: Upload a clip, get its colour look back as a LUT with a match score. Early stage.
+    metric: "spike: colour error 7.65 to 3.08 (paired)"
+    tech: [Python, NumPy, scikit-image]
+
+numbers:
+  - {value: "88.3%", label: top-1 accuracy, note: "werkbank, 60 hand-written", color: highlight}
+  - {value: "95.8%", label: accuracy routed alone, note: "werkbank, 40% of requests", color: highlight}
+  - {value: "188", label: guidance items checked, note: "reconciliation engine", color: accent}
+  - {value: "3.7%", label: sent to the LLM, note: "the rest decided by rules", color: accent}
+
+# certifications: left out until the real certification details are in.
+
+stack:
+  lanes:
+    - {name: AI and LLM, color: accent, items: [Claude API, Hugging Face, FinBERT]}
+    - {name: Data, color: highlight, items: [Python, Postgres, pandas, NumPy]}
+    - {name: Web, color: muted, items: [TypeScript, Next.js, Node.js]}
+    - {name: Tools, color: ok, items: [Git, GitHub Actions, Vercel, Claude Code]}
 
 buttons:
-  - label: LinkedIn
-    icon: linkedin
-    url: https://www.linkedin.com/in/omkar-khadilkar-/
-  - label: Substack
-    icon: substack
-    url: https://substack.com/@krakmo
-  - label: Email
-    icon: gmail
-    url: mailto:omkarkhadilkar8@gmail.com
-  - label: GitHub
-    icon: github
-    url: https://github.com/omkar-k0
+  - {label: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/omkar-khadilkar-/"}
+  - {label: Substack, icon: substack, url: "https://substack.com/@krakmo"}
+  - {label: Email, icon: email, url: "mailto:omkarkhadilkar8@gmail.com"}
+  - {label: GitHub, icon: github, url: "https://github.com/omkar-k0"}
+
+divider: true
 
 footer:
-  kicker: Omkar Khadilkar  |  Applied AI Engineer
-  lines:
-    - Thanks for visiting
-    - Open to Werkstudent roles in Essen, Duesseldorf and Dortmund
-    - New build log every Tuesday
+  name: Omkar Khadilkar
+  role: Applied AI Engineer
+  lines: [Thanks for visiting, New build log every Tuesday]
+  meta: "built with profile-hud"
