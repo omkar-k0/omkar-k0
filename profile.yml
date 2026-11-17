@@ -69,51 +69,35 @@ stats:
 projects:
   - title: Werkbank
     date: November 2026
-    description: >-
-      Order routing for furniture shops with their own workshops: a request typed
-      like a job slip goes to the right workshop with a confidence score, and unsure
-      orders wait in a review queue. English and German UI.
+    description: "Routes a furniture shop's repair orders to the right workshop with a confidence score, and unsure orders wait for review."
     tech: [Next.js, TypeScript, Postgres, Classifier, PWA]
     live: true
     url: https://werkbank-gamma.vercel.app
   - title: Dem Fragen
     date: November 2026
-    description: >-
-      Legal first information for India: plain-language questions get cited answers
-      under Indian law and a clear signal when to see an advocate, with a lawyer
-      review dashboard for every source.
+    description: "Cited answers to legal questions under Indian law, with a clear signal when to see an advocate."
     tech: [Next.js, TypeScript, Postgres, Retrieval, Claude API, Vitest]
     live: true
     url: https://github.com/omkar-k0/cuddly-octo-palm-tree
   - title: Guidance Reconciliation Engine
     date: October 2026
-    description: >-
-      Checks whether US tech companies hit their own revenue guidance: rules label
-      the clear cases, Claude judges only the low-confidence rest, and every label
-      must quote the SEC filing.
+    description: "Checks whether US tech companies hit their own revenue guidance, and every label quotes the SEC filing."
     tech: [Python, SEC EDGAR, XBRL, Claude API, pytest]
     live: true
     url: https://guidance-reconciliation-engine.vercel.app
   - title: Laufbahn
     date: November 2026
-    description: >-
-      A Claude Code plugin for a careful job search: it verifies every posting on the
-      employer's site, prepares tailored applications and never sends anything
-      without approval.
+    description: "A Claude Code plugin that runs a careful job search and never sends an application without approval."
     tech: [TypeScript, Node.js, Claude Code, SQLite]
     url: https://github.com/omkar-k0/laufbahn
   - title: GradeLens
     date: November 2026
-    description: >-
-      A Chrome extension for FOM students that shows grade trajectory and what each
-      open exam needs to hit a target, running entirely in the browser.
+    description: "A Chrome extension that shows FOM students what each open exam needs to reach their target grade."
     tech: [JavaScript, Chrome Extension, SVG]
     url: https://github.com/omkar-k0/gradelens
   - title: lookmatch
     date: November 2026
-    description: >-
-      Upload a clip, get its colour look back as a LUT with a match score. Early
-      stage: a feasibility spike and an eval plan built on looks with known answers.
+    description: "Upload a clip, get its colour look back as a LUT with a match score. Early stage."
     tech: [Python, NumPy, scikit-image, CIEDE2000]
     url: https://github.com/omkar-k0/lookmatch
 
