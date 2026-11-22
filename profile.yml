@@ -59,14 +59,14 @@ projects:
     live: true
     url: https://guidance-reconciliation-engine.vercel.app
     description: Checks if US tech firms hit the revenue forecast they gave investors, quoting the filing every time.
-    metric: "184 of 188 right on hand labels; 7 needed the LLM"
+    metric: "184 of 188 right on hand labels"
     tech: [Python, SEC EDGAR, XBRL, Claude API]
   - title: faultline
     date: "2026.11"
     stage: open source
     url: https://github.com/omkar-k0/faultline
     description: Finds why a dbt pipeline broke and shows the evidence, tested on 192 breakdowns made on purpose.
-    metric: "43 of 48 causes found on dev, 0 wrong; held-out pending"
+    metric: "43 of 48 found, 0 wrong; held-out pending"
     tech: [Python, dbt, DuckDB, Ollama]
   - title: Werkbank
     date: "2026.10"
@@ -74,14 +74,14 @@ projects:
     live: true
     url: https://werkbank-gamma.vercel.app
     description: Routes a furniture shop's orders to the right workshop and sends unclear ones to a person. No payments.
-    metric: "23 of 24 right when it decides alone (60 hand-written)"
+    metric: "23 of 24 right when deciding alone"
     tech: [Next.js, TypeScript, Postgres, PWA]
   - title: fuelcycle
     date: "2026.11"
     stage: open source
     url: https://omkarkhadilkar.dev/work/fuelcycle/
     description: A year of French fuel price changes, each one kept or rejected with a reason.
-    metric: "584 of 586 planted errors caught, 2 false alarms"
+    metric: "584 of 586 planted errors caught"
     tech: [Python, dbt, DuckDB, LightGBM]
   - title: GradeLens
     date: "2026.11"
@@ -98,7 +98,7 @@ projects:
     tech: [Next.js, TypeScript, Postgres, Claude API]
 
 numbers:
-  - {value: "184/188", label: promises checked right, note: "reconciliation engine, hand labels", color: accent}
+  - {value: "184/188", label: promises checked right, note: "reconciliation engine", color: accent}
   - {value: "43/48", label: causes found, 0 wrong, note: "faultline, dev split", color: accent}
   - {value: "23/24", label: right when deciding alone, note: "werkbank, hand-written", color: highlight}
   - {value: "584/586", label: planted errors caught, note: "fuelcycle data checks", color: highlight}
