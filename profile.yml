@@ -41,7 +41,7 @@ terminal:
       output: ["Omkar Khadilkar | Applied AI Engineer | M.Sc. student, FOM Essen"]
     - command: ls ~/live
       color: accent
-      output: ["werkbank/  dem-fragen/  guidance-reconciliation-engine/"]
+      output: ["guidance-reconciliation-engine/  werkbank/  fuelcycle/"]
     - command: cat werkbank/reports/eval.md
       color: highlight
       output: ["60 hand-written requests | top-1 88.3% | 40% auto-routed at 95.8%"]
@@ -53,66 +53,68 @@ headers:
   - {index: "04", title: Connect, subtitle: "where to find me", key: connect}
 
 projects:
-  - title: Werkbank
-    date: "2026.11"
-    stage: active
-    live: true
-    url: https://werkbank-gamma.vercel.app
-    description: Routes a furniture shop's repair orders to the right workshop, with a confidence score on each.
-    metric: "88.3% top-1 on 60 hand-written requests"
-    tech: [Next.js, TypeScript, Postgres, PWA]
-  - title: Dem Fragen
-    date: "2026.11"
-    stage: active
-    live: true
-    url: https://github.com/omkar-k0/cuddly-octo-palm-tree
-    description: Cited answers to legal questions under Indian law, with a clear signal when to see an advocate.
-    tech: [Next.js, TypeScript, Postgres, Claude API]
   - title: Guidance Reconciliation Engine
     date: "2026.10"
-    stage: pipeline
+    stage: product
     live: true
     url: https://guidance-reconciliation-engine.vercel.app
-    description: Checks if US tech firms hit their own revenue guidance, citing the SEC filing every time.
-    metric: "188 items, 3.7% sent to the LLM"
+    description: Checks if US tech firms hit the revenue forecast they gave investors, quoting the filing every time.
+    metric: "184 of 188 right on hand labels; 7 needed the LLM"
     tech: [Python, SEC EDGAR, XBRL, Claude API]
-  - title: Laufbahn
+  - title: faultline
     date: "2026.11"
-    stage: tool
-    url: https://github.com/omkar-k0/laufbahn
-    description: A Claude Code plugin for a careful job search that never applies without your approval.
-    tech: [TypeScript, Node.js, SQLite]
+    stage: open source
+    url: https://github.com/omkar-k0/faultline
+    description: Finds why a dbt pipeline broke and shows the evidence, tested on 192 breakdowns made on purpose.
+    metric: "43 of 48 causes found on dev, 0 wrong; held-out pending"
+    tech: [Python, dbt, DuckDB, Ollama]
+  - title: Werkbank
+    date: "2026.10"
+    stage: portfolio demo
+    live: true
+    url: https://werkbank-gamma.vercel.app
+    description: Routes a furniture shop's orders to the right workshop and sends unclear ones to a person. No payments.
+    metric: "23 of 24 right when it decides alone (60 hand-written)"
+    tech: [Next.js, TypeScript, Postgres, PWA]
+  - title: fuelcycle
+    date: "2026.11"
+    stage: open source
+    url: https://omkarkhadilkar.dev/work/fuelcycle/
+    description: A year of French fuel price changes, each one kept or rejected with a reason.
+    metric: "584 of 586 planted errors caught, 2 false alarms"
+    tech: [Python, dbt, DuckDB, LightGBM]
   - title: GradeLens
     date: "2026.11"
     stage: tool
     url: https://github.com/omkar-k0/gradelens
     description: A Chrome extension showing FOM students what each open exam needs to hit a target grade.
     tech: [JavaScript, Chrome Extension, SVG]
-  - title: lookmatch
+  - title: Dem Fragen
     date: "2026.11"
     stage: experiment
-    url: https://github.com/omkar-k0/lookmatch
-    description: Upload a clip, get its colour look back as a LUT with a match score. Early stage.
-    metric: "spike: colour error 7.65 to 3.08 (paired)"
-    tech: [Python, NumPy, scikit-image]
+    url: https://github.com/omkar-k0/cuddly-octo-palm-tree
+    description: Cited answers to legal questions under Indian law, with a clear signal when to see an advocate.
+    metric: "mock eval only; real test pending"
+    tech: [Next.js, TypeScript, Postgres, Claude API]
 
 numbers:
-  - {value: "88.3%", label: top-1 accuracy, note: "werkbank, 60 hand-written", color: highlight}
-  - {value: "95.8%", label: accuracy routed alone, note: "werkbank, 40% of requests", color: highlight}
-  - {value: "188", label: guidance items checked, note: "reconciliation engine", color: accent}
-  - {value: "3.7%", label: sent to the LLM, note: "the rest decided by rules", color: accent}
+  - {value: "184/188", label: promises checked right, note: "reconciliation engine, hand labels", color: accent}
+  - {value: "43/48", label: causes found, 0 wrong, note: "faultline, dev split", color: accent}
+  - {value: "23/24", label: right when deciding alone, note: "werkbank, hand-written", color: highlight}
+  - {value: "584/586", label: planted errors caught, note: "fuelcycle data checks", color: highlight}
 
 # certifications: left out until the real certification details are in.
 
 stack:
   lanes:
-    - {name: AI and LLM, color: accent, items: [Claude API, Hugging Face, FinBERT]}
-    - {name: Data, color: highlight, items: [Python, Postgres, pandas, NumPy]}
-    - {name: Web, color: muted, items: [TypeScript, Next.js, Node.js]}
+    - {name: AI and LLM, color: accent, items: [Claude API, Ollama, MLX, FinBERT]}
+    - {name: Data, color: highlight, items: [Python, SQL, dbt, DuckDB, Postgres, pandas]}
+    - {name: Web, color: muted, items: [TypeScript, Next.js, Astro]}
     - {name: Tools, color: ok, items: [Git, GitHub Actions, Vercel, Claude Code]}
 
 buttons:
-  - {label: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/omkar-khadilkar-/"}
+  - {label: Website, icon: website, url: "https://omkarkhadilkar.dev"}
+  - {label: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/omkar-khadilkar/"}
   - {label: Substack, icon: substack, url: "https://substack.com/@krakmo"}
   - {label: Email, icon: email, url: "mailto:omkarkhadilkar8@gmail.com"}
   - {label: GitHub, icon: github, url: "https://github.com/omkar-k0"}
