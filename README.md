@@ -1,4 +1,4 @@
-<img src="assets/profile-hud/hero.svg" width="100%" alt="Omkar Khadilkar, Applied AI Engineer. I build AI systems that know when they're unsure." />
+<img src="assets/profile-hud/hero.svg" width="100%" alt="Omkar Khadilkar, M.Sc. student, data and applied AI, seeking a working student role. I build AI systems that know when they're unsure." />
 
 <img src="assets/profile-hud/chart.svg" width="100%" alt="Werkbank auto-route threshold sweep: as the threshold rises, accuracy when routed alone goes from 82.8% to 100% and the share routed alone drops from 71.8% to 4.4%. Chosen gate 0.85: 95.4% accurate, 18.9% routed alone." />
 

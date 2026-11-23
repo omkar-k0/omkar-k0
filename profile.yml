@@ -8,7 +8,6 @@ hero:
   name: Omkar Khadilkar
   role: M.Sc. student, data and applied AI
   taglines:
-    - Seeking a working student role in data and applied AI
     - I build AI systems that know when they're unsure
     - Rules first, AI for the rest, a confidence score on every answer
     - M.Sc. Big Data and Business Analytics, FOM Essen
@@ -39,7 +38,7 @@ terminal:
   prompt: "$"
   commands:
     - command: whoami
-      output: ["Omkar Khadilkar | Applied AI Engineer | M.Sc. student, FOM Essen"]
+      output: ["Omkar Khadilkar | M.Sc. student, data and applied AI | FOM Essen"]
     - command: ls ~/live
       color: accent
       output: ["guidance-reconciliation-engine/  werkbank/  fuelcycle/"]
