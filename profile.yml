@@ -6,12 +6,13 @@ theme:
 hero:
   kicker: Hi, I am
   name: Omkar Khadilkar
-  role: Applied AI Engineer
+  role: M.Sc. student, data and applied AI
   taglines:
+    - Seeking a working student role in data and applied AI
     - I build AI systems that know when they're unsure
     - Rules first, AI for the rest, a confidence score on every answer
     - M.Sc. Big Data and Business Analytics, FOM Essen
-  status: Open to Werkstudent roles
+  status: Seeking a working student role
   location: Essen, Germany
   graph:
     hub: GATE
@@ -123,6 +124,6 @@ divider: true
 
 footer:
   name: Omkar Khadilkar
-  role: Applied AI Engineer
+  role: M.Sc. student, data and applied AI
   lines: [Thanks for visiting, New build log every Tuesday]
   meta: "built with profile-hud"

@@ -22,7 +22,7 @@
 <a href="https://github.com/omkar-k0/cuddly-octo-palm-tree"><img src="assets/profile-hud/project-dem-fragen.svg" width="49%" alt="Dem Fragen" /></a>
 </p>
 
-<p align="center"><sub>Every project has a case study at <a href="https://omkarkhadilkar.dev">omkarkhadilkar.dev</a>. How I work: I research and design each system and make the decisions, after talking options through with Claude; Claude writes the code; we debug it together.</sub></p>
+<p align="center"><sub>Every project has a case study at <a href="https://omkarkhadilkar.dev">omkarkhadilkar.dev</a>. How I code: I design, test and review all code. I use Claude Code as a pair programmer.</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/profile-hud/header-numbers-light.svg">
