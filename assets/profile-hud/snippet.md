@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile-hud/hero-mobile.svg">
-    <img src="assets/profile-hud/hero.svg" alt="Omkar Khadilkar, Applied AI Engineer" width="840">
+    <img src="assets/profile-hud/hero.svg" alt="Omkar Khadilkar, M.Sc. student, data and applied AI" width="840">
   </picture>
 </p>
 
